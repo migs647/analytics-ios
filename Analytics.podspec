@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.source_files = [
     'Analytics/Classes/**/*',
     'Analytics/Vendor/**/*',
-    'Analytics/*'
+    'Analytics/*.{h,m}'
   ]
 end
