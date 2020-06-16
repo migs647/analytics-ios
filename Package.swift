@@ -20,27 +20,15 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "AnalyticsObjC",
+            name: "Analytics",
             dependencies: [],
             path: "Analytics/",
             exclude: ["SwiftSources"],
+            sources: ["Classes", "Internal"],
+            publicHeadersPath: "Classes",
             cSettings: [
-            .headerSearchPath("Include"),
-            .headerSearchPath("Analytics/Include"),
+            .headerSearchPath("Internal"),
             .headerSearchPath("Classes"),
-            .headerSearchPath("Classes/Crypto"),
-            .headerSearchPath("Classes/Integrations"),
-            .headerSearchPath("Classes/Internal"),
-            .headerSearchPath("Classes/Middlewares"),
-            .headerSearchPath("Vendor"),
         ]),
-        .target(
-            name: "Analytics",
-            dependencies: ["AnalyticsObjC"],
-            path: "SwiftSources"
-        ),
-        .testTarget(
-            name: "AnalyticsTests",
-            dependencies: ["Analytics"]),
     ]
 )
