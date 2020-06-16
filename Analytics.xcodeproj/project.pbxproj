@@ -263,8 +263,7 @@
 				EAA5427C1EB42B8C00945DA7 /* SEGReachability.m */,
 			);
 			name = Vendor;
-			path = Analytics/Vendor;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		EADEB8511DECD080005322DA = {
 			isa = PBXGroup;
@@ -340,7 +339,7 @@
 				EADEB8AB1DECD12B005322DA /* SEGAnalyticsConfiguration.h */,
 				EADEB8AC1DECD12B005322DA /* SEGAnalyticsConfiguration.m */,
 			);
-			path = Classes;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		EADEB8771DECD12B005322DA /* Crypto */ = {
@@ -350,7 +349,7 @@
 				EADEB8791DECD12B005322DA /* SEGAES256Crypto.m */,
 				EADEB87A1DECD12B005322DA /* SEGCrypto.h */,
 			);
-			path = Crypto;
+			name = Crypto;
 			sourceTree = "<group>";
 		};
 		EADEB87B1DECD12B005322DA /* Integrations */ = {
@@ -373,7 +372,7 @@
 				EADEB88A1DECD12B005322DA /* SEGTrackPayload.h */,
 				EADEB88B1DECD12B005322DA /* SEGTrackPayload.m */,
 			);
-			path = Integrations;
+			name = Integrations;
 			sourceTree = "<group>";
 		};
 		EADEB88C1DECD12B005322DA /* Internal */ = {
@@ -403,7 +402,7 @@
 				EADEB8A31DECD12B005322DA /* UIViewController+SEGScreen.m */,
 				5AF0EDFEDC0EE79A0A0EB713 /* SEGScreenReporting.h */,
 			);
-			path = Internal;
+			name = Internal;
 			sourceTree = "<group>";
 		};
 		EADEB8A41DECD12B005322DA /* Middlewares */ = {
@@ -414,7 +413,7 @@
 				EADEB8A71DECD12B005322DA /* SEGMiddleware.h */,
 				EADEB8A81DECD12B005322DA /* SEGMiddleware.m */,
 			);
-			path = Middlewares;
+			name = Middlewares;
 			sourceTree = "<group>";
 		};
 		EADEB8E11DECD335005322DA /* Utils */ = {
