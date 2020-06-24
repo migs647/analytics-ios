@@ -30,8 +30,12 @@ let package = Package(
             sources: ["Classes", "Internal"],
             publicHeadersPath: "Classes",
             cSettings: [
-            .headerSearchPath("Internal"),
-            .headerSearchPath("Classes"),
-        ]),
+                .headerSearchPath("Internal"),
+                .headerSearchPath("Classes")
+            ],
+            linkerSettings: [
+                .unsafeFlags(["-fprofile-instr-generate"]),
+            ]
+        ),
     ]
 )
